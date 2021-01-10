@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <script>
+        alert("Dear Student Welcome!. You are required to fill 3 fields for each of your subject "+ 
+        "i.e, Name of Subject, Total Marks of that Subject & Marks obtained in that subject");
+        var sub1 = prompt("Please enter name of your first subject");
+        var sub1totalMarks = parseInt(prompt("Please enter total marks of "+sub1));
+        var sub1obtainedMarks = parseInt(prompt("Please enter marks, you obtained in "+sub1));
+        var sub2 = prompt("Please enter name of your second subject");
+        var sub2totalMarks = parseInt(prompt("Please enter total marks of "+sub2));
+        var sub2obtainedMarks = parseInt(prompt("Please enter marks, you obtained in "+sub2));
+        var sub3 = prompt("Please enter name of your third subject");
+        var sub3totalMarks = parseInt(prompt("Please enter total marks of "+sub3));
+        var sub3obtainedMarks = parseInt(prompt("Please enter marks, you obtained in "+sub3));
+        var percentageSub1 = (sub1obtainedMarks/sub1totalMarks)*100;
+        var percentageSub2 = (sub2obtainedMarks/sub2totalMarks)*100;
+        var percentageSub3 = (sub3obtainedMarks/sub3totalMarks)*100;
+        var overallPercentage = ((sub1obtainedMarks+sub2obtainedMarks+sub3obtainedMarks)/(sub1totalMarks+sub2totalMarks+sub3totalMarks))*100;
+        alert("Your percentage in "+sub1+" is "+percentageSub1+"%, "+
+        "Your percentage in "+sub2+" is "+percentageSub2+"%, "
+        +"Your percentage in "+sub3+" is "+percentageSub3+"%, Your overall percentage is "+overallPercentage+
+        "%. Please click OK in order to see your final 'Grade'");
+        if (overallPercentage>=80){
+            alert("You have achieved 'A-one Grade', Remarks: Excellent!");
+        }
+        else if (overallPercentage>=70){
+            alert("You have achieved 'A Grade', Remarks: Good!")
+        }
+        else if (overallPercentage>=60){
+            alert("You have achieved 'B Grade', Remarks: You need to improve")
+        }
+        else{
+            alert("You are fail, Remarks: Sorry")
+
+        }
+        </script>
+    </body>
+</html>
